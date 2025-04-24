@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    text-align: center;
+}
+
+#status-container {
+    padding: 40px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease; /* Smooth transition */
+}
+
+/* Default / Validating state */
+#status-container {
+    background-color: #eee; /* Light grey */
+}
+
+/* Success state */
+#status-container.success {
+    background-color: #d4edda; /* Light green */
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+/* Duplicate state */
+#status-container.duplicate {
+    background-color: #fff3cd; /* Light yellow */
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+/* Invalid state */
+#status-container.invalid {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+#status-message {
+    margin-bottom: 15px;
+}
+#event-details, #ticket-id-display {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555; /* Darker grey for details */
+}
